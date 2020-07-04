@@ -25,11 +25,11 @@
     text-shadow: 0px 2px 2px #000000;
 }
 
-.main{
+.body{
     padding: 20px;
 }
 
-.main .title{
+.body .title{
     height: 40px;
     vertical-align: middle;
     font-size: 20px;
@@ -42,7 +42,7 @@
 }
 
 .item{
-
+    margin-right: 20px;
 }
 
 .item .item__header{
@@ -73,5 +73,54 @@
 
 .item .item__content button{
     margin-top: 10px;
+    width: 100%;
+    background-color: #00C1AA;
+    color: white;
+    height: 35px;
 }
 
+.btn-agregar{
+    cursor: pointer;
+}
+
+.page__agregar{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.page__agregar .inputs{
+    display: flex;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.inputs input{
+    flex-grow: 1;
+}
+
+.inputs input:first-child{
+    margin-right: 20px;
+}
+
+.page__agregar textarea{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.page__agregar .buttons{
+    width: 300px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    height: 40px;
+}
+
+.page__agregar .buttons button{
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.page__agregar .buttons button:first-child{
+    margin-right: 20px;
+    background-color: #FF5252;
+    color: white;
+}

@@ -8,15 +8,25 @@
 
 </head>
 <body>
-    <header class="header">
-        <h3>VIDEO TV</h3>
-        <h4>Agregar Video</h4>
-    </header>
-    <main class="main">
-        <p class="title">Lista de videos</p>
-        <div id="app">
-            <item-card :videos2="videos"></item-card>
+    <main id="app" class="main">
+        <!-- Header -->
+        <div class="header">
+            <h3>VIDEO TV</h3>
+            <h4 v-on:click="agregar()" class="btn-agregar">Agregar Video</h4>
         </div>
+        
+        <div class="body">
+            <!-- Listar Videos -->
+            <div v-if="currentPage == 'listar'">
+                <listar :videos2="videos"></listar>
+            </div>
+
+            <!-- Agregar Video -->
+            <div v-if="currentPage == 'agregar'" class="page__agregar">
+                <agregar v-on:value="addVideo"></agregar>
+            </div>
+        </div>
+        
     </main>
 
     <!-- development version, includes helpful console warnings -->

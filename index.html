@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
-    Hello World
+    <header class="header">
+        <h3>VIDEO TV</h3>
+        <h4>Agregar Video</h4>
+    </header>
+    <main class="main">
+        <p class="title">Lista de videos</p>
+        <div id="app">
+            <item-card :videos2="videos"></item-card>
+        </div>
+    </main>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
